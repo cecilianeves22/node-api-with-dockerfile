@@ -14,6 +14,6 @@ Espero que dê tudo certo =).
 
 Por fim, segue a imagem da arquitetura do projeto:
 
-![alt text](https://github.com/cecilianeves22/node-api-with-dockerfile/blob/main/image.jpg?raw=true)
+![alt text](https://raw.githubusercontent.com/cecilianeves22/node-api-with-dockerfile/main/image.png)
 
 
