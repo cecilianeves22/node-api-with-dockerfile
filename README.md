@@ -8,7 +8,7 @@ Utilizar o comando:
 ```sh
 docker-compose up -d --build
 ```
-###Exemplo para utilizar desde da aplicação até o Docker: 
+### Exemplo para utilizar desde da aplicação até o Docker: 
 ```sh
 docker-compose up -d --build
 
