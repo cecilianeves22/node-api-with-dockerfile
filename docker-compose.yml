@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: db
+    image: mysql
+    environment:
+      MYSQL_USER: fiap-user
+      MYSQL_PASSWORD: 123
+      MYSQL_DATABASE: apinode
+      MYSQL_ROOT_PASSWORD: 123
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    networks:
+      - apinode_network
+    volumes:
+      - db_data:/var/lib/mysql
+  app:
+    container_name: "api-node"
+    build: .
+    command: sh -c "npm run migrate && npm start"
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    environment:
+      - DB_HOST=db
+      - DB_USER=fiap-user
+      - DB_PASSWORD=123
+      - DB_NAME=apinode
+      - DB_PORT=3306
+      - AUTH_PLUGIN='mysql_native_password'
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db
+    networks:
+      - apinode_network
+
+networks:
+  apinode_network:
+
+volumes:
+  db_data:
