@@ -1,8 +1,6 @@
 # Como clonar o projeto:
 
-Copie o seguinte link: ``https://github.com/cecilianeves22/node-api-with-dockerfile.git``
-
-Abre o git bash ou o programa que preferir e cole o link do projeto =).
+Abra o git bash ou o programa que preferir e cole o link do projeto utilizando o seguinte comando: ``git clone https://github.com/cecilianeves22/node-api-with-dockerfile.git``.
 
 # Como executar o projeto: 
 
