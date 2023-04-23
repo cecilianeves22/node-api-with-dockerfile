@@ -11,3 +11,9 @@ docker-compose up -d --build
 É possível que nas primeiras vezes que a aplicação tentar subir, o banco rejeite a conexão, mas só pelos 10 primeiros segundos. Depois disso a aplicação abre normalmente. Isso acontece porque, ao subir a aplicação, está configurado um arquivo knex, que gera uma migration do banco de dados. Quando este não está ativo, a aplicação tenta reconectar até conseguir realizar a migration.
 
 Espero que dê tudo certo =).
+
+Por fim, segue a imagem da arquitetura do projeto:
+
+![alt text](https://github.com/cecilianeves22/node-api-with-dockerfile/blob/main/image.jpg?raw=true)
+
+
